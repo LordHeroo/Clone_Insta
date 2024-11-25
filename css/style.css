@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: helvetica;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+body{
+    background-color:var(--cor-fundo) ;
+    
+}
+
+/* root */
+:root{
+    --cor-fundo: #fafafa;
+    --cor-branco: #fff;
+    --cor-borda: #bdbdbd;
+    --cor-botao-submit:#b2dffc;
+    --cor-ou: #bbb;
+    --cor-facebook: #385185;
+    --cor-esqueceu: #373799;
+    --cor-paragrafo-a:#262626;
+    --cor-registro: #4a95f6;
+    --cor-footer-links: #8e8e8e;
+}
+
+/* COONTAINERS */
+#main-container{
+    display: flex;
+    margin-top: 30px;
+}
+
+#banner-container,
+#form-container{
+    flex: 1 1 0;
+    width: 50%;
+}
+
+#banner-container img{
+    width: 100%;
+    max-width: 15px;
+    margin-top: 25px;
+    max-width: 380px;
+
+}
+
+#banner-container{
+    text-align: right;
+}
+
+#form-container{
+    text-align: center;
+}
+
+/* LOGIN FORM */
+
+#form-box{
+    background-color:var(--cor-fundo);
+    border: 1px solid var(--cor-borda);
+    width: 350px;
+    margin-top: 30px;
+}
+
+#logo-insta{
+    width: 175px;
+    height: 51px;
+    margin: 30px auto 12px; 
+}
+
+#login-form input{
+    display: block;
+    font-size: 12px;
+    padding: 12px 9px;
+    background-color: var(--cor-fundo);
+    border:1px solid var(--cor-borda);
+    border-radius: 3px;
+    width: 80%;
+    margin: 5px auto;
+}
+
+#login-form input[type ="submit"]{
+    background-color:var(--cor-botao-submit);
+    color: var(--cor-branco);
+    margin-top: 15px;
+    border-radius: 5px;
+    height:30px;
+    padding: 0;
+    font-weight: bold;
+}
+
+/* SEPARADOR */
+
+.line{
+    border: 1px solid var(--cor-borda);
+    width: 268px;
+    margin: 25px auto 35px;
+}
+
+.separator span{
+    position: absolute;
+    text-transform: uppercase;
+    color: var(--cor-ou);
+    background-color:var(--cor-branco);
+    top: 310px;
+    width: 50px;
+    margin-left: -25px;
+    font-size: 14px;
+}
+
+/*FACEBOOK LOGIN */
+#facebook-login{
+    color: var(--cor-facebook);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#facebook-login img{
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}
+
+#facebook-login span{
+    font-weight: bold;
+    font-size: 13px;
+    margin-top: 1px;
+    
+}
+
+/* FORGOT PASSWORD */
+#forgot-pass{
+    margin-bottom: 20px;
+    font-size: 12px;
+    margin-top: 5px;
+    
+}
+
+#forgot-pass a{
+    color: var(--cor-esqueceu);
+}
+
+/* REGISTER */
+#register-container{
+    background-color: var(--cor-branco);
+    border: 1px solid var(--cor-borda);
+    width: 350px;
+    margin-top: 10px;
+    padding: 25px;
+}
+
+#register-container p{
+    font-size: 14px;
+    color: var(--cor-paragrafo-a);
+}
+
+#register-container a{
+    color: var(--cor-registro);
+    font-weight: bold;
+}
+
+/* GET APP */
+#get-app-container{
+    text-align: center;
+    width: 350px;
+}
+
+#get-app-container p{
+    margin: 20px 0;
+    font-size: 13px;
+}
+
+#get-app-container img{
+    width: 136px;
+    height: 40px;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: left;
+    width: 1000px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer-links{
+    display: flex;
+}
+
+#footer-links li{
+    margin-right: 10px;
+}
+
+#footer-links a,
+#copyright{
+    color:var(--cor-footer-links) ;
+}
+
+#copyright{
+    margin-top: 10px;
+}
+
+/*MOBILE*/
+@media (max-width: 450px){
+    body{
+        background-color: var(--cor-branco);
+    }
+
+    #banner-container{
+        display: none;
+    }
+
+    #main-container,
+    #form-box{
+        margin-top: 0;
+    }
+
+    #form-container,
+    #form-box,
+    #register-container,
+    #get-app-container{
+        width: 100%;
+        border: none;
+    }
+
+    footer{
+        width: 300px;
+        
+    }
+
+    #footer-links{
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    }
+
+    #footer-links li{
+        margin:3px;
+    }
+    #footer-links{
+        margin-bottom: 10px;
+    }
+
+    .separator span{
+    top: 250px;
+    }
+
+    
+
+}
